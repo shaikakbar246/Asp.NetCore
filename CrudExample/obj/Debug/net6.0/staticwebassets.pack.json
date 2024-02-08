@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\DotNetCore\\CrudExample\\CrudExample\\wwwroot\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\StyleSheet.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CrudExample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CrudExample.props",
+      "PackagePath": "build\\CrudExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CrudExample.props",
+      "PackagePath": "buildMultiTargeting\\CrudExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CrudExample.props",
+      "PackagePath": "buildTransitive\\CrudExample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

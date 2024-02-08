@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "GKcsCilO/95ruvgEgrAXxXod4m+HNr64/jhDO5msRaI=",
+  "Source": "CrudExample",
+  "BasePath": "_content/CrudExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CrudExample\\wwwroot",
+      "Source": "CrudExample",
+      "ContentRoot": "F:\\DotNetCore\\CrudExample\\CrudExample\\wwwroot\\",
+      "BasePath": "_content/CrudExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\DotNetCore\\CrudExample\\CrudExample\\wwwroot\\StyleSheet.css",
+      "SourceId": "CrudExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\DotNetCore\\CrudExample\\CrudExample\\wwwroot\\",
+      "BasePath": "_content/CrudExample",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

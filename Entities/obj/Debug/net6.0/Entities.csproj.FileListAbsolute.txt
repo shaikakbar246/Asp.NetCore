@@ -1,0 +1,11 @@
+F:\DotNetCore\CrudExample\Entities\bin\Debug\net6.0\Entities.deps.json
+F:\DotNetCore\CrudExample\Entities\bin\Debug\net6.0\Entities.dll
+F:\DotNetCore\CrudExample\Entities\bin\Debug\net6.0\Entities.pdb
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.dll
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\refint\Entities.dll
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.pdb
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\ref\Entities.dll

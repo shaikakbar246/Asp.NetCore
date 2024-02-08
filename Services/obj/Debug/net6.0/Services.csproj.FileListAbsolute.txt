@@ -1,0 +1,17 @@
+F:\DotNetCore\CrudExample\Services\bin\Debug\net6.0\Services.deps.json
+F:\DotNetCore\CrudExample\Services\bin\Debug\net6.0\Services.dll
+F:\DotNetCore\CrudExample\Services\bin\Debug\net6.0\Services.pdb
+F:\DotNetCore\CrudExample\Services\bin\Debug\net6.0\Entities.dll
+F:\DotNetCore\CrudExample\Services\bin\Debug\net6.0\ServiceContracts.dll
+F:\DotNetCore\CrudExample\Services\bin\Debug\net6.0\ServiceContracts.pdb
+F:\DotNetCore\CrudExample\Services\bin\Debug\net6.0\Entities.pdb
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.dll
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\refint\Services.dll
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\Services.pdb
+F:\DotNetCore\CrudExample\Services\obj\Debug\net6.0\ref\Services.dll
