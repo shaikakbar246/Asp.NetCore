@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceContracts.Enum
+namespace ServiceContracts.Enums
 {
     public  enum GenderOptions
     {
