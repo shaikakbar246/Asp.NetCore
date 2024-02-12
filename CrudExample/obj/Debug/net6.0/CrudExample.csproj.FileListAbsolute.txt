@@ -24,3 +24,13 @@ F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\refint\CrudExample.dll
 F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.pdb
 F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.genruntimeconfig.cache
 F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\ref\CrudExample.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Entities.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\ServiceContracts.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Services.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Entities.pdb
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\ServiceContracts.pdb
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Services.pdb
+F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.csproj.AssemblyReference.cache
+F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.RazorAssemblyInfo.cache
+F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.RazorAssemblyInfo.cs
+F:\DotNetCore\CrudExample\CrudExample\obj\Debug\net6.0\CrudExample.csproj.CopyComplete
