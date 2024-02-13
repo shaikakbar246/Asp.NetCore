@@ -1,4 +1,4 @@
-﻿using ServiceContract;
+﻿using ServiceContracts;
 using ServiceContracts.DTO;
 using Services;
 using System;
@@ -13,7 +13,7 @@ namespace CrudTests
 
         public CountriesServiceTest()
         {
-            _countriesServices = new CounriesService();
+            _countriesServices = new CounriesService(false);
         }
         #region Add Countries
 

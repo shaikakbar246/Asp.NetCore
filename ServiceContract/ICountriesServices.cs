@@ -1,6 +1,6 @@
 ﻿using ServiceContracts.DTO;
 
-namespace ServiceContract
+namespace ServiceContracts
 {
     /// <summary>
     /// Represents Business logic for manipulating

@@ -5,7 +5,6 @@ using Entities;
 using System;
 using Xunit;
 using Services;
-using ServiceContract;
 using Xunit.Abstractions;
 using System.Linq;
 
@@ -23,7 +22,7 @@ namespace CrudTests
         public PersonsServiceTest(ITestOutputHelper testOutputHelper)
         {
             _personService = new PersonsService();
-            _countriesService = new CounriesService();
+            _countriesService = new CounriesService(false);
             _testOutputHelper = testOutputHelper;
 
         }
