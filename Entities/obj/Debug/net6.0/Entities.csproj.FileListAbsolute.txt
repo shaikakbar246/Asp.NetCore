@@ -9,3 +9,4 @@ F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.dll
 F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\refint\Entities.dll
 F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.pdb
 F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\ref\Entities.dll
+F:\DotNetCore\CrudExample\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
