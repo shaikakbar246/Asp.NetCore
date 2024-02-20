@@ -6,8 +6,8 @@ using Entities;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 //add services into loc container
-builder.Services.AddSingleton<IPersonsService,PersonsService>();
-builder.Services.AddSingleton<ICountriesServices, CounriesService>();
+builder.Services.AddScoped<IPersonsService,PersonsService>();
+builder.Services.AddScoped<ICountriesServices, CounriesService>();
 
 builder.Services.AddDbContext<PersonsDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));

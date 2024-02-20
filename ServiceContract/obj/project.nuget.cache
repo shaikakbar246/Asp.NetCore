@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/ObUYFFcQj5GVmTR6/jx66hDnurEZjkaed5yqPTqxv2g3OyCIzv0x0TWEJ0TjRct8XOZlkch/nYKQfaCK5D84Q==",
+  "dgSpecHash": "8xZuGRL/cO8/A5C3D35Z9ZSYKo09/ctXqm1KIUCja5cL6mGbtA2WbMNkiXPwkKyNvCEPVxvEUy13N/hKvYbiAA==",
   "success": true,
   "projectFilePath": "F:\\DotNetCore\\CrudExample\\ServiceContract\\ServiceContracts.csproj",
   "expectedPackageFiles": [

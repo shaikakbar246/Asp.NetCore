@@ -7,6 +7,7 @@ using Xunit;
 using Services;
 using Xunit.Abstractions;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrudTests
 {
@@ -21,8 +22,10 @@ namespace CrudTests
         //constructor
         public PersonsServiceTest(ITestOutputHelper testOutputHelper)
         {
-            _personService = new PersonsService();
-            _countriesService = new CounriesService(false);
+            _countriesService = new CounriesService(new PersonsDbContext(new DbContextOptionsBuilder<PersonsDbContext>().Options));
+
+            _personService = new PersonsService(new PersonsDbContext(new DbContextOptionsBuilder<PersonsDbContext>().Options), _countriesService);
+
             _testOutputHelper = testOutputHelper;
 
         }

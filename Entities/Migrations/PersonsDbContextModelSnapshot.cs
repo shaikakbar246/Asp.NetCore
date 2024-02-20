@@ -94,6 +94,9 @@ namespace Entities.Migrations
                     b.Property<bool>("ReceiveNewsLetters")
                         .HasColumnType("bit");
 
+                    b.Property<string>("TIN")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("PersonID");
 
                     b.ToTable("Persons", (string)null);
