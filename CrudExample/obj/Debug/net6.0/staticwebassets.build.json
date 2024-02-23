@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3zNQs3FJP0+DxaCzvHa59PA2SVvkiFKYzRB31qkGgkM=",
+  "Hash": "eiKpDwQt43Azeynv5Zh8AhnL3zXD/caVnNpojVw8TOk=",
   "Source": "CrudExample",
   "BasePath": "_content/CrudExample",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "F:\\DotNetCore\\CrudExample\\CrudExample\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "SourceId": "CrudExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\DotNetCore\\CrudExample\\CrudExample\\wwwroot\\",
+      "BasePath": "_content/CrudExample",
+      "RelativePath": "Rotativa/wkhtmltopdf.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Rotativa\\wkhtmltopdf.exe"
     },
     {
       "Identity": "F:\\DotNetCore\\CrudExample\\CrudExample\\wwwroot\\StyleSheet.css",

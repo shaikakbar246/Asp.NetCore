@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Entities.Migrations
 {
-    [DbContext(typeof(PersonsDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     partial class PersonsDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -95,11 +95,18 @@ namespace Entities.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("TIN")
-                        .HasColumnType("nvarchar(max)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(8)")
+                        .HasDefaultValue("ABC12345")
+                        .HasColumnName("TaxIdentificationNumber");
 
                     b.HasKey("PersonID");
 
+                    b.HasIndex("CountryID");
+
                     b.ToTable("Persons", (string)null);
+
+                    b.HasCheckConstraint("CHK_TIN", "len([TaxIdentificationNumber]) = 8");
 
                     b.HasData(
                         new
@@ -234,6 +241,15 @@ namespace Entities.Migrations
                             PersonName = "Verene",
                             ReceiveNewsLetters = true
                         });
+                });
+
+            modelBuilder.Entity("Entities.Person", b =>
+                {
+                    b.HasOne("Entities.Countries", "Countries")
+                        .WithMany()
+                        .HasForeignKey("CountryID");
+
+                    b.Navigation("Countries");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,7 @@
 ﻿using Entities;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 using ServiceContracts;
 using ServiceContracts.DTO;
 using System.ComponentModel.DataAnnotations;
@@ -9,13 +12,13 @@ namespace Services
     public class CounriesService : ICountriesServices
     {
         //private fields
-        private readonly PersonsDbContext _db;
-        public CounriesService(PersonsDbContext personsDbContext)
+        private readonly ApplicationDbContext _db;
+        public CounriesService(ApplicationDbContext personsDbContext)
         {
             _db = personsDbContext;
             
         }
-        public CountriesResponse AddCountries(CountryAddRequest? countriesAddRequest)
+        public async Task<CountriesResponse> AddCountries(CountryAddRequest? countriesAddRequest)
         {
 
             //Validation: countryAddRequest parameter can't be null
@@ -32,7 +35,7 @@ namespace Services
             }
 
             //validation :ContryName  can not be duplicate
-            if (_db.Countries.Count(temp =>
+            if (await _db.Countries.CountAsync(temp =>
                 temp.CountryName== countriesAddRequest.CountryName)>0)
             {
                 throw new ArgumentException("Given Country Name Already Added");
@@ -47,25 +50,60 @@ namespace Services
 
             //Add country object into _Countries
             _db.Countries.Add(country);
-            _db.SaveChanges();
+           await _db.SaveChangesAsync();
             return country.ToCountriesResponse();
         }
 
-        public List<CountriesResponse> GetAllCountries()
+        public async Task<List<CountriesResponse>> GetAllCountries()
         {
-            return _db.Countries.Select(country => country.ToCountriesResponse()).ToList();
+            return await _db.Countries.Select(country => country.ToCountriesResponse()).ToListAsync();
         }
 
-        public CountriesResponse? GetCountriesByCountriesIDs(Guid? countryID)
+        public async Task<CountriesResponse?> GetCountriesByCountriesIDs(Guid? countryID)
         {
             if (countryID == null)
                 return null;
             Countries?countries_response_from_list=
-                _db.Countries.FirstOrDefault(temp=>temp.CountryId
+              await  _db.Countries.FirstOrDefaultAsync(temp=>temp.CountryId
                 ==countryID);
             if (countries_response_from_list == null)
                 return null;
             return countries_response_from_list.ToCountriesResponse();
+        }
+
+        public async Task<int> UploadCountriesFromExcelFile(IFormFile formFile)
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            await formFile.CopyToAsync(memoryStream);
+            int countriesInserted = 0;
+
+            using (ExcelPackage excelPackage = new ExcelPackage(memoryStream))
+            {
+                ExcelWorksheet workSheet = excelPackage.Workbook.Worksheets["Countries"];
+
+                int rowCount = workSheet.Dimension.Rows;
+
+                for (int row = 2; row <= rowCount; row++)
+                {
+                    string? cellValue = Convert.ToString(workSheet.Cells[row, 1].Value);
+
+                    if (!string.IsNullOrEmpty(cellValue))
+                    {
+                        string? countryName = cellValue;
+
+                        if (_db.Countries.Where(temp => temp.CountryName == countryName).Count() == 0)
+                        {
+                            Countries country = new Countries() { CountryName = countryName };
+                            _db.Countries.Add(country);
+                            await _db.SaveChangesAsync();
+
+                            countriesInserted++;
+                        }
+                    }
+                }
+            }
+
+            return countriesInserted;
         }
     }
 }
