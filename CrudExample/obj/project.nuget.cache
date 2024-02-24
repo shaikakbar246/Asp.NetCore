@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xEL92pM4C8f3XlfmtshvyliONPyGZMM7d1g6k6AKQtJeOz2MmUyGS/c8GE/esxwTYBo4ry35wghy2UrPDe8Klw==",
+  "dgSpecHash": "XvyXS6pzFrWnuwsAIoNwBOO4Z64fRwpNbRI+e8dQR8N8jVZwMqwLq+I3ElAuEQ35IsDkbhvkQ1zG9bIK44qQJw==",
   "success": true,
   "projectFilePath": "F:\\DotNetCore\\CrudExample\\CrudExample\\CrudExample.csproj",
   "expectedPackageFiles": [

@@ -1,0 +1,15 @@
+F:\DotNetCore\CrudExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.deps.json
+F:\DotNetCore\CrudExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.dll
+F:\DotNetCore\CrudExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.pdb
+F:\DotNetCore\CrudExample\RepositoryContracts\bin\Debug\net6.0\Entities.dll
+F:\DotNetCore\CrudExample\RepositoryContracts\bin\Debug\net6.0\Entities.pdb
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.AssemblyReference.cache
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfoInputs.cache
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfo.cs
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CopyComplete
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.dll
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\refint\RepositoryContracts.dll
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.pdb
+F:\DotNetCore\CrudExample\RepositoryContracts\obj\Debug\net6.0\ref\RepositoryContracts.dll

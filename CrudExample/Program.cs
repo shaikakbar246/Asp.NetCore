@@ -2,10 +2,15 @@ using ServiceContracts;
 using Services;
 using Microsoft.EntityFrameworkCore;
 using Entities;
+using Repositories;
+using RepositoryContracts;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 //add services into loc container
+builder.Services.AddScoped<IPersonsRepository, PersonsRepository>();
+builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
+
 builder.Services.AddScoped<IPersonsService,PersonsService>();
 builder.Services.AddScoped<ICountriesServices, CounriesService>();
 

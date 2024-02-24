@@ -173,3 +173,5 @@ F:\DotNetCore\CrudExample\CrudTests\bin\Debug\net6.0\runtimes\win\lib\netcoreapp
 F:\DotNetCore\CrudExample\CrudTests\bin\Debug\net6.0\AutoFixture.dll
 F:\DotNetCore\CrudExample\CrudTests\bin\Debug\net6.0\Fare.dll
 F:\DotNetCore\CrudExample\CrudTests\bin\Debug\net6.0\FluentAssertions.dll
+F:\DotNetCore\CrudExample\CrudTests\bin\Debug\net6.0\RepositoryContracts.dll
+F:\DotNetCore\CrudExample\CrudTests\bin\Debug\net6.0\RepositoryContracts.pdb

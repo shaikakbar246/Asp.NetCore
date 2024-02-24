@@ -2,7 +2,7 @@
 using Entities;
 using Microsoft.EntityFrameworkCore;
 using RepositoryContracts;
-
+using System.Threading.Tasks;
 namespace Repositories
 {
     public class CountriesRepository:ICountriesRepository
@@ -31,10 +31,9 @@ namespace Repositories
         {
             return await _db.Countries.FirstOrDefaultAsync(temp => temp.CountryId == countryID);
         }
-
-        public Task<Countries?> GetCountryByCountryName(string countryName)
+        public async Task<Countries?> GetCountryByCountryName(string countryName)
         {
-            throw new NotImplementedException();
+            return await _db.Countries.FirstOrDefaultAsync(temp => temp.CountryName == countryName);
         }
     }
 }

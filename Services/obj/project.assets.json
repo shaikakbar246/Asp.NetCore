@@ -1084,6 +1084,19 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "RepositoryContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        }
+      },
       "ServiceContracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2718,6 +2731,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "RepositoryContracts/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryContracts/RepositoryContracts.csproj",
+      "msbuildProject": "../RepositoryContracts/RepositoryContracts.csproj"
+    },
     "ServiceContracts/1.0.0": {
       "type": "project",
       "path": "../ServiceContract/ServiceContracts.csproj",
@@ -2728,6 +2746,7 @@
     "net6.0": [
       "CsvHelper >= 27.2.1",
       "EPPlus >= 6.0.7",
+      "RepositoryContracts >= 1.0.0",
       "ServiceContracts >= 1.0.0"
     ]
   },
@@ -2758,6 +2777,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "F:\\DotNetCore\\CrudExample\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "F:\\DotNetCore\\CrudExample\\RepositoryContracts\\RepositoryContracts.csproj"
+            },
             "F:\\DotNetCore\\CrudExample\\ServiceContract\\ServiceContracts.csproj": {
               "projectPath": "F:\\DotNetCore\\CrudExample\\ServiceContract\\ServiceContracts.csproj"
             }

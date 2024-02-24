@@ -87,3 +87,7 @@ F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\EPPlus.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\EPPlus.Interfaces.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\EPPlus.System.Drawing.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\RepositoryContracts.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\RepositoryContracts.pdb
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Repositories.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Repositories.pdb
