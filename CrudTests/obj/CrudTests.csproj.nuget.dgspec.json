@@ -4,6 +4,104 @@
     "F:\\DotNetCore\\CrudExample\\CrudTests\\CrudTests.csproj": {}
   },
   "projects": {
+    "F:\\DotNetCore\\CrudExample\\CrudExample\\CrudExample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DotNetCore\\CrudExample\\CrudExample\\CrudExample.csproj",
+        "projectName": "CrudExample",
+        "projectPath": "F:\\DotNetCore\\CrudExample\\CrudExample\\CrudExample.csproj",
+        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+        "outputPath": "F:\\DotNetCore\\CrudExample\\CrudExample\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\DotNetCore\\CrudExample\\Entities\\Entities.csproj": {
+                "projectPath": "F:\\DotNetCore\\CrudExample\\Entities\\Entities.csproj"
+              },
+              "F:\\DotNetCore\\CrudExample\\Repositories\\Repositories.csproj": {
+                "projectPath": "F:\\DotNetCore\\CrudExample\\Repositories\\Repositories.csproj"
+              },
+              "F:\\DotNetCore\\CrudExample\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "F:\\DotNetCore\\CrudExample\\RepositoryContracts\\RepositoryContracts.csproj"
+              },
+              "F:\\DotNetCore\\CrudExample\\ServiceContract\\ServiceContracts.csproj": {
+                "projectPath": "F:\\DotNetCore\\CrudExample\\ServiceContract\\ServiceContracts.csproj"
+              },
+              "F:\\DotNetCore\\CrudExample\\Services\\Services.csproj": {
+                "projectPath": "F:\\DotNetCore\\CrudExample\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\DotNetCore\\CrudExample\\CrudTests\\CrudTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -28,6 +126,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "F:\\DotNetCore\\CrudExample\\CrudExample\\CrudExample.csproj": {
+                "projectPath": "F:\\DotNetCore\\CrudExample\\CrudExample\\CrudExample.csproj"
+              },
               "F:\\DotNetCore\\CrudExample\\Entities\\Entities.csproj": {
                 "projectPath": "F:\\DotNetCore\\CrudExample\\Entities\\Entities.csproj"
               },
@@ -154,6 +255,65 @@
               "version": "[6.0.5, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DotNetCore\\CrudExample\\Repositories\\Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DotNetCore\\CrudExample\\Repositories\\Repositories.csproj",
+        "projectName": "Repositories",
+        "projectPath": "F:\\DotNetCore\\CrudExample\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+        "outputPath": "F:\\DotNetCore\\CrudExample\\Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\DotNetCore\\CrudExample\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "F:\\DotNetCore\\CrudExample\\RepositoryContracts\\RepositoryContracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

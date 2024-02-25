@@ -4,16 +4,18 @@ using Microsoft.EntityFrameworkCore;
 using RepositoryContracts;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
+using Microsoft.Extensions.Logging;
 
 namespace Repositories
 {
     public class PersonsRepository : IPersonsRepository
     {
         private readonly ApplicationDbContext _db;
-
-        public PersonsRepository(ApplicationDbContext db)
+        private readonly ILogger<PersonsRepository> _logger;
+        public PersonsRepository(ApplicationDbContext db, ILogger<PersonsRepository> logger)
         {
             _db = db;
+            _logger = logger;
         }
         public async Task<Person> AddPerson(Person person)
         {
@@ -33,11 +35,13 @@ namespace Repositories
 
         public async Task<List<Person>> GetAllPersons()
         {
+            _logger.LogInformation("GetAllPersons of PersonsRepository");
             return await _db.Persons.Include("Countries").ToListAsync();
         }
 
         public async Task<List<Person>> GetFilteredPersons(Expression<Func<Person, bool>> predicate)
         {
+            _logger.LogInformation("GetFilteredPersons of PersonsRepository");
             return await _db.Persons.Include("Countries")
    .Where(predicate)
    .ToListAsync();

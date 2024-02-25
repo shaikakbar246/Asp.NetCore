@@ -7,6 +7,7 @@ using ServiceContracts.Enums;
 using Services;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Rotativa.AspNetCore;
+using Microsoft.Extensions.Logging;
 
 namespace CrudExample.Controllers
 {
@@ -15,18 +16,23 @@ namespace CrudExample.Controllers
         //private fields
         private readonly IPersonsService _personsService;
         private readonly ICountriesServices _countriesService;
+        private readonly ILogger<PersonsController> _logger;
 
         //constructor
-        public PersonsController(IPersonsService personsService, ICountriesServices countriesService)
+        public PersonsController(IPersonsService personsService, ICountriesServices countriesService, ILogger<PersonsController> logger)
         {
             _personsService = personsService;
             _countriesService = countriesService;
+            _logger = logger;
         }
 
         [Route("persons/index")]
         [Route("/")]
         public async Task<IActionResult> Index(string searchBy, string? searchString, string sortBy = nameof(PersonResponse.PersonName), SortOrderOptions sortOrder = SortOrderOptions.ASC)
         {
+            _logger.LogInformation("Index action method of PersonsController");
+
+            _logger.LogDebug($"searchBy: {searchBy}, searchString: {searchString}, sortBy: {sortBy}, sortOrder: {sortOrder}");
             //Search
             ViewBag.SearchFields = new Dictionary<string, string>()
       {
