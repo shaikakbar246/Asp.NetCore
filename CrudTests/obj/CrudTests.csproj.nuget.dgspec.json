@@ -77,6 +77,14 @@
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[5.7.1, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.1.1, )"
             }
           },
           "imports": [

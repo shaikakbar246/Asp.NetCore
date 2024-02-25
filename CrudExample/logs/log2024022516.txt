@@ -1,0 +1,130 @@
+2024-02-25 16:05:04.820 +05:30 [INF] User profile is available. Using 'C:\Users\New\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 16:05:05.242 +05:30 [INF] Now listening on: http://localhost:5202
+2024-02-25 16:05:05.310 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 16:05:05.352 +05:30 [INF] Hosting environment: Development
+2024-02-25 16:05:05.354 +05:30 [INF] Content root path: F:\DotNetCore\CrudExample\CrudExample\
+2024-02-25 16:05:09.606 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/ - -
+2024-02-25 16:05:10.257 +05:30 [INF] Executing endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:05:10.879 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CrudExample.Controllers.PersonsController (CrudExample).
+2024-02-25 16:05:12.495 +05:30 [INF] Index action method of PersonsController
+2024-02-25 16:05:12.616 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-02-25 16:05:12.619 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-02-25 16:05:15.352 +05:30 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2024-02-25 16:05:17.326 +05:30 [INF] Executed DbCommand (249ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryId], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryId]
+2024-02-25 16:05:17.721 +05:30 [INF] GetSortedPersons of PersonsService
+2024-02-25 16:05:17.772 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 16:05:18.966 +05:30 [INF] Executed ViewResult - view Index executed in 1196.7747ms.
+2024-02-25 16:05:18.991 +05:30 [INF] Executed action CrudExample.Controllers.PersonsController.Index (CrudExample) in 8095.8407ms
+2024-02-25 16:05:18.996 +05:30 [INF] Executed endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:05:19.163 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/ - - - 200 - text/html;+charset=utf-8 9627.5812ms
+2024-02-25 16:05:19.219 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - -
+2024-02-25 16:05:19.223 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_vs/browserLink - -
+2024-02-25 16:05:19.290 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 71.2237ms
+2024-02-25 16:05:19.412 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 189.4942ms
+2024-02-25 16:08:19.999 +05:30 [INF] User profile is available. Using 'C:\Users\New\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 16:08:20.852 +05:30 [INF] Now listening on: http://localhost:5202
+2024-02-25 16:08:20.866 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 16:08:20.867 +05:30 [INF] Hosting environment: Development
+2024-02-25 16:08:20.869 +05:30 [INF] Content root path: F:\DotNetCore\CrudExample\CrudExample\
+2024-02-25 16:08:22.474 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/ - -
+2024-02-25 16:08:22.664 +05:30 [INF] Executing endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:08:22.851 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CrudExample.Controllers.PersonsController (CrudExample).
+2024-02-25 16:08:24.007 +05:30 [INF] Index action method of PersonsController
+2024-02-25 16:08:24.138 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-02-25 16:08:24.148 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-02-25 16:08:26.908 +05:30 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2024-02-25 16:08:28.474 +05:30 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryId], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryId]
+2024-02-25 16:08:28.796 +05:30 [INF] GetSortedPersons of PersonsService
+2024-02-25 16:08:28.850 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 16:08:29.542 +05:30 [INF] Executed ViewResult - view Index executed in 698.9612ms.
+2024-02-25 16:08:29.563 +05:30 [INF] Executed action CrudExample.Controllers.PersonsController.Index (CrudExample) in 6708.0714ms
+2024-02-25 16:08:29.566 +05:30 [INF] Executed endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:08:29.663 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_vs/browserLink - -
+2024-02-25 16:08:29.672 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/ - - - 200 - text/html;+charset=utf-8 7288.6854ms
+2024-02-25 16:08:29.726 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - -
+2024-02-25 16:08:29.740 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 13.9024ms
+2024-02-25 16:08:29.780 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 116.8662ms
+2024-02-25 16:29:13.201 +05:30 [INF] User profile is available. Using 'C:\Users\New\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 16:29:13.717 +05:30 [INF] Now listening on: http://localhost:5202
+2024-02-25 16:29:13.730 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 16:29:13.732 +05:30 [INF] Hosting environment: Development
+2024-02-25 16:29:13.734 +05:30 [INF] Content root path: F:\DotNetCore\CrudExample\CrudExample\
+2024-02-25 16:29:16.167 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/ - -
+2024-02-25 16:29:16.456 +05:30 [INF] Executing endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:29:16.821 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CrudExample.Controllers.PersonsController (CrudExample).
+2024-02-25 16:29:18.171 +05:30 [INF] Index action method of PersonsController
+2024-02-25 16:29:18.341 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-02-25 16:29:18.345 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-02-25 16:29:21.772 +05:30 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2024-02-25 16:29:24.296 +05:30 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryId], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryId]
+2024-02-25 16:29:24.635 +05:30 [INF] GetSortedPersons of PersonsService
+2024-02-25 16:29:24.728 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 16:29:25.562 +05:30 [INF] Executed ViewResult - view Index executed in 846.9908ms.
+2024-02-25 16:29:25.632 +05:30 [INF] Executed action CrudExample.Controllers.PersonsController.Index (CrudExample) in 8746.1555ms
+2024-02-25 16:29:25.636 +05:30 [INF] Executed endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:29:25.715 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_vs/browserLink - -
+2024-02-25 16:29:25.726 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/ - - - 200 - text/html;+charset=utf-8 9579.4168ms
+2024-02-25 16:29:25.769 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - -
+2024-02-25 16:29:25.778 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 9.1028ms
+2024-02-25 16:29:25.797 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.4398ms
+2024-02-25 16:30:32.714 +05:30 [INF] User profile is available. Using 'C:\Users\New\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 16:30:33.323 +05:30 [INF] Now listening on: http://localhost:5202
+2024-02-25 16:30:33.329 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 16:30:33.336 +05:30 [INF] Hosting environment: Development
+2024-02-25 16:30:33.337 +05:30 [INF] Content root path: F:\DotNetCore\CrudExample\CrudExample\
+2024-02-25 16:30:34.904 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/ - -
+2024-02-25 16:30:35.393 +05:30 [INF] Executing endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:30:35.656 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CrudExample.Controllers.PersonsController (CrudExample).
+2024-02-25 16:30:37.279 +05:30 [INF] Index action method of PersonsController
+2024-02-25 16:30:37.375 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-02-25 16:30:37.377 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-02-25 16:30:39.783 +05:30 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2024-02-25 16:30:41.478 +05:30 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryId], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryId]
+2024-02-25 16:30:41.817 +05:30 [INF] GetSortedPersons of PersonsService
+2024-02-25 16:30:41.878 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 16:30:42.638 +05:30 [INF] Executed ViewResult - view Index executed in 768.0196ms.
+2024-02-25 16:30:42.657 +05:30 [INF] Executed action CrudExample.Controllers.PersonsController.Index (CrudExample) in 6992.9886ms
+2024-02-25 16:30:42.660 +05:30 [INF] Executed endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:30:42.757 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/ - - - 200 - text/html;+charset=utf-8 7864.7637ms
+2024-02-25 16:30:42.830 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_vs/browserLink - -
+2024-02-25 16:30:42.835 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - -
+2024-02-25 16:30:42.861 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 25.9128ms
+2024-02-25 16:30:42.933 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 103.2162ms
+2024-02-25 16:34:50.642 +05:30 [INF] User profile is available. Using 'C:\Users\New\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-25 16:34:51.085 +05:30 [INF] Now listening on: http://localhost:5202
+2024-02-25 16:34:51.093 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-25 16:34:51.095 +05:30 [INF] Hosting environment: Development
+2024-02-25 16:34:51.096 +05:30 [INF] Content root path: F:\DotNetCore\CrudExample\CrudExample\
+2024-02-25 16:34:52.969 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/ - -
+2024-02-25 16:34:53.125 +05:30 [INF] Executing endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:34:53.311 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CrudExample.Controllers.PersonsController (CrudExample).
+2024-02-25 16:34:54.589 +05:30 [INF] Index action method of PersonsController
+2024-02-25 16:34:54.695 +05:30 [INF] GetFilteredPersons of PersonsService
+2024-02-25 16:34:54.697 +05:30 [INF] GetAllPersons of PersonsRepository
+2024-02-25 16:34:57.418 +05:30 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2024-02-25 16:34:58.828 +05:30 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryId], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryId]
+2024-02-25 16:34:59.114 +05:30 [INF] GetSortedPersons of PersonsService
+2024-02-25 16:34:59.144 +05:30 [INF] Executing ViewResult, running view Index.
+2024-02-25 16:35:00.412 +05:30 [INF] Executed ViewResult - view Index executed in 1256.5821ms.
+2024-02-25 16:35:00.433 +05:30 [INF] Executed action CrudExample.Controllers.PersonsController.Index (CrudExample) in 7117.1161ms
+2024-02-25 16:35:00.445 +05:30 [INF] Executed endpoint 'CrudExample.Controllers.PersonsController.Index (CrudExample)'
+2024-02-25 16:35:00.557 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/ - - - 200 - text/html;+charset=utf-8 7594.4454ms
+2024-02-25 16:35:00.624 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - -
+2024-02-25 16:35:00.626 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5202/_vs/browserLink - -
+2024-02-25 16:35:00.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 10.0941ms
+2024-02-25 16:35:00.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 77.2700ms

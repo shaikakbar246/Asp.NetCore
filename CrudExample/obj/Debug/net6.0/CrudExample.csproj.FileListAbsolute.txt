@@ -76,7 +76,6 @@ F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.AspNetCore.Razo
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
-F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Newtonsoft.Json.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
@@ -91,3 +90,17 @@ F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\RepositoryContracts.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\RepositoryContracts.pdb
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Repositories.dll
 F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Repositories.pdb
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.AspNetCore.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.File.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.Azure.Services.AppAuthentication.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.MSSqlServer.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
+F:\DotNetCore\CrudExample\CrudExample\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
